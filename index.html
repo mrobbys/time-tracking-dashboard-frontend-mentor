@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Rubik", sans-serif;
+        overflow-x: hidden;
+        background-color: #0f1424;
+        color: #f5f5f5;
+      }
+    </style>
+
+    <!-- Tailwindcss -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <!-- main start -->
+    <main class="flex min-h-dvh items-center justify-center px-4 py-10">
+      <!-- grid container start -->
+      <div
+        id="content-wrapper"
+        class="grid w-full max-w-sm grid-cols-1 gap-8 md:max-w-5xl md:grid-cols-4"
+      >
+        <!-- profile start -->
+        <section class="row-span-2 rounded-b-xl bg-[#1c1f4a]" id="profile">
+          <div
+            class="flex items-center justify-center gap-4 rounded-xl bg-[#5847eb] p-6 md:flex-col md:items-start"
+          >
+            <img
+              src="images/image-jeremy.png"
+              alt="Jeremy"
+              width="64"
+              class="rounded-full border-2 border-zinc-50"
+            />
+            <div class="md:my-4">
+              <h2 class="text-sm text-[#bdc1ff]">Report For</h2>
+              <p class="text-lg font-light md:text-3xl">Jeremy Robson</p>
+            </div>
+          </div>
+          <div
+            class="action-buttons flex items-center justify-between px-10 py-4 md:flex-col md:items-start md:gap-4 md:px-6"
+          >
+            <button
+              type="button"
+              id="daily-btn"
+              data-timeframe="daily"
+              class="cursor-pointer text-[#6f76c8] transition-colors duration-300 hover:text-[#bdc1ff]"
+            >
+              Daily
+            </button>
+            <button
+              type="button"
+              id="weekly-btn"
+              data-timeframe="weekly"
+              class="cursor-pointer text-[#6f76c8] transition-colors duration-300 hover:text-[#bdc1ff]"
+            >
+              Weekly
+            </button>
+            <button
+              type="button"
+              id="monthly-btn"
+              data-timeframe="monthly"
+              class="cursor-pointer text-[#6f76c8] transition-colors duration-300 hover:text-[#bdc1ff]"
+            >
+              Monthly
+            </button>
+          </div>
+        </section>
+        <!-- profile end -->
+      </div>
+      <!-- grid container end -->
+    </main>
+    <!-- main end -->
+
+    <!-- script -->
+    <script src="script.js"></script>
+  </body>
+</html>
